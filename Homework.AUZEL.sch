@@ -1,0 +1,283 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Homework.AUZEL-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "One Transistor Amplifier"
+Date "2017-03-26"
+Rev "1"
+Comp "Abdurrahman UZEL"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC548 Q1
+U 1 1 58D395D5
+P 4050 2800
+F 0 "Q1" H 4250 2875 50  0000 L CNN
+F 1 "BC548" H 4250 2800 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4250 2725 50  0001 L CIN
+F 3 "http://groups.ist.utl.pt/lee/SUBA/Suba_files/c945.pdf" H 4050 2800 50  0001 L CNN
+	1    4050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58D39666
+P 4750 1950
+F 0 "R3" V 4830 1950 50  0000 C CNN
+F 1 "4.7k" V 4750 1950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal" V 4680 1950 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/315/AOA0000C249-947629.pdf" H 4750 1950 50  0001 C CNN
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58D3970A
+P 3650 1950
+F 0 "R1" V 3730 1950 50  0000 C CNN
+F 1 "22k" V 3650 1950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P25.40mm_Horizontal" V 3580 1950 50  0001 C CNN
+F 3 "http://pdf1.alldatasheet.com/datasheet-pdf/view/167973/SHARMA/RS11-1/2W-22K.html" H 3650 1950 50  0001 C CNN
+	1    3650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58D3976F
+P 3650 3550
+F 0 "R2" V 3730 3550 50  0000 C CNN
+F 1 "6.8k" V 3650 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3580 3550 50  0001 C CNN
+F 3 "" H 3650 3550 50  0000 C CNN
+	1    3650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58D397D6
+P 4150 3550
+F 0 "R4" V 4230 3550 50  0000 C CNN
+F 1 "1.8k" V 4150 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical" V 4080 3550 50  0001 C CNN
+F 3 "" H 4150 3550 50  0000 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58D39819
+P 2850 2700
+F 0 "C1" H 2875 2800 50  0000 L CNN
+F 1 "20uF" H 2875 2600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Axial_L30.0mm_D18.0mm_P35.00mm_Horizontal" H 2888 2550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/tvatom-266625.pdf" H 2850 2700 50  0001 C CNN
+	1    2850 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 58D398A2
+P 5650 2350
+F 0 "C3" H 5675 2450 50  0000 L CNN
+F 1 "20uF" H 5675 2250 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Axial_L30.0mm_D18.0mm_P35.00mm_Horizontal" H 5688 2200 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/tvatom-266625.pdf" H 5650 2350 50  0001 C CNN
+	1    5650 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 58D3998E
+P 4850 3550
+F 0 "C2" H 4875 3650 50  0000 L CNN
+F 1 "50uF" H 4875 3450 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Axial_L20.0mm_D10.0mm_P26.00mm_Horizontal" H 4888 3400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/tvatom-266625.pdf" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 58D39BD1
+P 1850 2700
+F 0 "P1" H 1850 2850 50  0000 C CNN
+F 1 "SIGNAL_IN" V 1950 2700 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH" H 1850 2700 50  0001 C CNN
+F 3 "" H 1850 2700 50  0000 C CNN
+	1    1850 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 58D39C5C
+P 6750 2550
+F 0 "P2" H 6750 2700 50  0000 C CNN
+F 1 "SIGNAL_OUT" V 6850 2550 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH" H 6750 2550 50  0001 C CNN
+F 3 "" H 6750 2550 50  0000 C CNN
+	1    6750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58D39D97
+P 6400 3000
+F 0 "#PWR01" H 6400 2750 50  0001 C CNN
+F 1 "GND" H 6400 2850 50  0000 C CNN
+F 2 "" H 6400 3000 50  0000 C CNN
+F 3 "" H 6400 3000 50  0000 C CNN
+	1    6400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58D39E0F
+P 4750 4200
+F 0 "#PWR02" H 4750 3950 50  0001 C CNN
+F 1 "GND" H 4750 4050 50  0000 C CNN
+F 2 "" H 4750 4200 50  0000 C CNN
+F 3 "" H 4750 4200 50  0000 C CNN
+	1    4750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58D39E9B
+P 2350 3050
+F 0 "#PWR03" H 2350 2800 50  0001 C CNN
+F 1 "GND" H 2350 2900 50  0000 C CNN
+F 2 "" H 2350 3050 50  0000 C CNN
+F 3 "" H 2350 3050 50  0000 C CNN
+	1    2350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR04
+U 1 1 58D39F1E
+P 5600 1350
+F 0 "#PWR04" H 5600 1200 50  0001 C CNN
+F 1 "+12V" H 5600 1500 50  0000 C CNN
+F 2 "" H 5600 1350 50  0000 C CNN
+F 3 "" H 5600 1350 50  0000 C CNN
+	1    5600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1800 4750 1350
+Wire Wire Line
+	3650 1350 5750 1350
+Wire Wire Line
+	3650 1800 3650 1350
+Connection ~ 4750 1350
+Wire Wire Line
+	3650 2100 3650 3400
+Wire Wire Line
+	3000 2700 3650 2700
+Connection ~ 3650 2700
+Wire Wire Line
+	3850 2800 3650 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	2050 2750 2700 2750
+Wire Wire Line
+	2700 2750 2700 2700
+Wire Wire Line
+	2050 2650 2050 3050
+Wire Wire Line
+	2050 3050 2350 3050
+Wire Wire Line
+	4150 3000 4150 3400
+Wire Wire Line
+	4850 3400 4850 3150
+Wire Wire Line
+	4850 3150 4150 3150
+Connection ~ 4150 3150
+Wire Wire Line
+	3650 3700 3650 3900
+Wire Wire Line
+	3650 3900 4850 3900
+Wire Wire Line
+	4850 3900 4850 3700
+Wire Wire Line
+	4150 3700 4150 4200
+Connection ~ 4150 3900
+Wire Wire Line
+	4150 4200 4750 4200
+Wire Wire Line
+	4150 2600 4150 2300
+Wire Wire Line
+	4150 2300 4750 2300
+Wire Wire Line
+	4750 2100 4750 2350
+Wire Wire Line
+	4750 2350 5500 2350
+Connection ~ 4750 2300
+Wire Wire Line
+	5800 2350 6500 2350
+Wire Wire Line
+	6500 2350 6500 2500
+Wire Wire Line
+	6500 2500 6550 2500
+Wire Wire Line
+	6550 2600 6400 2600
+Wire Wire Line
+	6400 2600 6400 3000
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 58D6FCCF
+P 2350 3050
+F 0 "#FLG05" H 2350 3145 50  0001 C CNN
+F 1 "PWR_FLAG" H 2350 3230 50  0000 C CNN
+F 2 "" H 2350 3050 50  0000 C CNN
+F 3 "" H 2350 3050 50  0000 C CNN
+	1    2350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 58D7000D
+P 5750 1350
+F 0 "#FLG06" H 5750 1445 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 1530 50  0000 C CNN
+F 2 "" H 5750 1350 50  0000 C CNN
+F 3 "" H 5750 1350 50  0000 C CNN
+	1    5750 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 1350
+$EndSCHEMATC
